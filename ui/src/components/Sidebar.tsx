@@ -7,6 +7,7 @@ import {
   History,
   Search,
   SquarePen,
+  MessageCircle,
   Network,
   Settings,
 } from "lucide-react";
@@ -75,6 +76,7 @@ export function Sidebar() {
             <SquarePen className="h-4 w-4 shrink-0" />
             <span className="truncate">New Issue</span>
           </button>
+          <SidebarNavItem to="/chat" label="Chat" icon={MessageCircle} />
           <SidebarNavItem to="/dashboard" label="Dashboard" icon={LayoutDashboard} liveCount={liveRunCount} />
           <SidebarNavItem
             to="/inbox"
